@@ -1,0 +1,67 @@
+.alert {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.rrr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #b4f3bf;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  height: 80vh;
+}
+
+.showTimer h1 {
+  font-size: 9em;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.highlight {
+  color: transparent;
+  animation: effect 1s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    background: linear-gradient(#065206, #00ff00);
+    -webkit-background-clip: text;
+  }
+
+  100% {
+    background: linear-gradient(#09ffe6, #000fff);
+    -webkit-background-clip: text;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.buttons .btn {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #da0037;
+  cursor: pointer;
+  border-radius: 1.2em;
+  padding: 0.4em 1.2em;
+}
+
+.buttons .btn:hover {
+  transition: all 200ms ease;
+  cursor: pointer;
+  background-color: #b93d5c;
+  color: #fff;
+}
